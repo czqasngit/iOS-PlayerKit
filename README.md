@@ -8,7 +8,6 @@
 
 
 A complete audio player with a modular design that can be replaced with different components to suit different needs. A decoder and two data providers have been implemented
-
 一个完整的音频播放器,采用了组件化的设计,可按需要替换不同的组件以适应不同的需求。目前已经实现了一个解码器和两个数据提供器
 
 ![Labrador3](http://pba6dsu9x.bkt.clouddn.com/Labrador3.jpg)
