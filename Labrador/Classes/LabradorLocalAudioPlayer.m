@@ -12,11 +12,6 @@
 
 @implementation LabradorLocalAudioPlayer
 
-
-- (void)dealloc
-{
-    NSLog(@"LabradorHTTPAudioPlayer") ;
-}
 - (instancetype)init
 {
     self = [super init];

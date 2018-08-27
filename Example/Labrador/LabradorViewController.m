@@ -7,9 +7,9 @@
 //
 
 #import "LabradorViewController.h"
-#import <Labrador/Labrarod.h>
+#import <Labrador/Labrador.h>
 
-@interface LabradorViewController ()
+@interface LabradorViewController ()<LabradorAudioPlayerDelegate>
 {
     LabradorAudioPlayer *_player ;
 }
@@ -27,7 +27,7 @@
         [_player reset] ;
         return;
     }
-    _player = [[LabradorHTTPAudioPlayer alloc] initWithURLString:@"http://audio01.dmhmusic.com/133_48_T10022565790_320_1_1_0_sdk-cpm/0105/M00/67/84/ChR45FmNKxKAMbUaAKtt4_FdDfk806.mp3?xcode=2644ab9d7ace31a031b92b02616b9f0ad6c8eef"] ;
+    _player = [[LabradorHTTPAudioPlayer alloc] initWithURLString:@"http://audio01.dmhmusic.com/133_48_T10025016114_320_1_1_0_sdk-cpm/0102/M00/74/04/ChR45VmOYEeAQREIAHOgLJUCTPE194.mp3?xcode=397a08b128d18a2431bdd4b2d4c108ef7a7b03d"] ;
     //    _player = [[LabradorLocalAudioPlayer alloc] init] ;
     _player.delegate = self ;
     [_player prepare] ;

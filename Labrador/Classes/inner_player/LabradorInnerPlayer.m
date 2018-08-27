@@ -38,7 +38,6 @@ static void Labrador_AudioQueueOutputCallback(void * __nullable       inUserData
 - (void)dealloc
 {
     [self dispose] ;
-    NSLog(@"LabradorInnerPlayer") ;
 }
 - (instancetype)initWithProvider:(id<LabradorInnerPlayerDataProvider>)provider
 {

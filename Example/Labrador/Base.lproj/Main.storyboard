@@ -106,6 +106,9 @@
                             <constraint firstItem="FnT-bz-jyv" firstAttribute="top" secondItem="jgd-NT-CcN" secondAttribute="bottom" constant="29" id="xJJ-lr-GoZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="qiZ-Fc-j0F" id="kJ5-LM-gU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

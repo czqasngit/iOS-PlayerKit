@@ -27,7 +27,6 @@
 - (void)dealloc
 {
     if(_cacheMapping.data) free(_cacheMapping.data) ;
-    NSLog(@"LabradorCacheMapping") ;
 }
 - (instancetype)initWithURLString:(NSString *)urlString cacheDirectory:(nonnull NSString *)cacheDirectory
 {
@@ -36,7 +35,6 @@
         _urlString = urlString ;
         _name = [[urlString md5] stringByAppendingString:@"_info"] ;
         _path = [cacheDirectory stringByAppendingPathComponent:_name] ;
-        NSLog(@"Cache Mapping File Path: %@", _path) ;
         _headerLength = 32 + sizeof(UInt32) + sizeof(bool) ;
         [self initializeCacheMapping] ;
     }
@@ -93,7 +91,6 @@
     if(start + length >= _cacheMapping.length * 1024 || length == 0) return ;
     size_t _s = start / 1024 ;
     NSUInteger _l = ceil(length * 1.0f / 1024) ;
-//    NSLog(@"完成的片段:(%ld-%ld)    (%ld-%ld)", _s, _l, _s * 1024, _l * 1024) ;
     memset(_cacheMapping.data + _s, 0xFF, _l) ;
     [self synchronize] ;
     _cacheMappingCount += _l ;
@@ -128,7 +125,6 @@
             length ++ ;
             if(length * 1024 >= minSize || start + length >= _cacheMapping.length) {
                 success = YES ;
-//                NSLog(@"连续内存: %ld [from: %u] [start:%ld, length:%ld, mapping: %u]", length * 1024, from, start, length, _cacheMapping.length) ;
                 break ;
             }
         }

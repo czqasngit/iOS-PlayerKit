@@ -28,10 +28,6 @@
 
 #pragma mark - initialize
 
-- (void)dealloc
-{
-    NSLog(@"LarbadorDownloader") ;
-}
 - (instancetype)initWithURLString:(NSString * _Nonnull)urlString
                         cachePath:(NSString *)cachePath
                             start:(NSUInteger)start
@@ -87,7 +83,6 @@
 - (void)start{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:_urlString]] ;
     NSString *rangString = [NSString stringWithFormat:@"bytes=%ld-%ld", _start,(_start + _length - 1)] ;
-//    NSLog(@"当前下载范围: %@", rangString) ;
     [request setValue:rangString forHTTPHeaderField:@"Range"] ;
     _task = [_session dataTaskWithRequest:request] ;
     [_task resume] ;

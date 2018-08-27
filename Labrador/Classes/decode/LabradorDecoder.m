@@ -118,7 +118,6 @@ NS_INLINE void _PacketsProc(void *                              inClientData,
     self.dataOffset += (UInt32)read_size ;
     if(status != noErr) {
         NSLog(@"Error: %d", status) ;
-//        return nil ;
     }
 }
 

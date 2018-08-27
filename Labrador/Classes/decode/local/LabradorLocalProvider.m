@@ -16,10 +16,6 @@
 @end
 @implementation LabradorLocalProvider
 
-- (void)dealloc
-{
-    NSLog(@"LabradorLocalProvider") ;
-}
 - (instancetype)init
 {
     self = [super init];

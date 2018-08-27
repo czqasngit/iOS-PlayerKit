@@ -12,7 +12,6 @@
 
 - (void)dealloc
 {
-    NSLog(@"LabradorAudioPacket dealloc") ;
     free(self.packetDescription) ;
     free(self.data) ;
 }

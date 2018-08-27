@@ -10,6 +10,8 @@
 
 @interface LabradorViewController : UIViewController
 
+@property (nonatomic, strong)IBOutlet UISlider *slider ;
+
 - (IBAction)play:(id)sender ;
 - (IBAction)pause:(id)sender ;
 - (IBAction)resume:(id)sender ;

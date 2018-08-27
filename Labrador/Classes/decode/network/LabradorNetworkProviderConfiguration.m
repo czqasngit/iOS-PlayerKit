@@ -10,10 +10,7 @@
 
 @implementation LabradorNetworkProviderConfiguration
 
-- (void)dealloc
-{
-    NSLog(@"LabradorNetworkProviderConfiguration") ;
-}
+
 + (instancetype)defaultConfiguration {
     LabradorNetworkProviderConfiguration *configuration = [[LabradorNetworkProviderConfiguration alloc] init] ;
     configuration.cacheDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,

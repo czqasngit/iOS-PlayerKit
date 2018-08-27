@@ -41,10 +41,6 @@
 
 @implementation LabradorNetworkProvider
 
-- (void)dealloc
-{
-    NSLog(@"LabradorNetworkProvider") ;
-}
 - (instancetype)initWithURLString:(NSString * _Nonnull)urlString
                     configuration:(LabradorNetworkProviderConfiguration *)configuration
                          delegate:(nonnull id<LabradorDataProviderDelegate>)delegate
@@ -95,7 +91,6 @@
     
     //查找下一个需要下载的片段
     NSRange range = [_cache findNextDownloadFragmentWithFrom:start maxLength:_minSize] ;
-//    NSLog(@"[下载]查找下一个需要下载的片段: %ld        %@, %@", start, NSStringFromRange(range), [NSThread currentThread]) ;
     
     //如果range.length 为0 表示已经下载到文件末尾
     if(range.length != 0) {
