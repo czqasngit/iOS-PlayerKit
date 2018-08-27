@@ -85,6 +85,6 @@ czqasn, czqasn_6@163.com
 
 ## License
 
-Rambo is available under the MIT license. See the LICENSE file for more info.
+Labrador is available under the MIT license. See the LICENSE file for more info.
 
 
