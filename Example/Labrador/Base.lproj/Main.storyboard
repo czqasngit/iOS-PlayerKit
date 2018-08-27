@@ -73,7 +73,7 @@
                                     <constraint firstAttribute="height" constant="29" id="hCe-Ru-lTK"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sliderValueChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="Hxd-Gy-4Up"/>
+                                    <action selector="sliderValueChanged:" destination="whP-gf-Uak" eventType="touchDragOutside" id="anP-gA-cNA"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-bz-jyv">
