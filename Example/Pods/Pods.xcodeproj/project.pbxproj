@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000E529A58FCAF00497660DE6C4FAFFC /* LabradorLocalProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 78283F57602AD2F455BC90A051E020E6 /* LabradorLocalProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B61169D213FE626438AE457C782CFA /* LabradorDecodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B837A2F39ED948329DFA9B5A181021 /* LabradorDecodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0807E2B611310225A72DEAEE7A0238E1 /* LabradorDataProviderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E5EC72C1DE23AD1090F3CD1A280D61F8 /* LabradorDataProviderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A2C8C99A288D8B6E8219843C9DD156D /* LabradorAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8F122AE0690A7E847BD348440D8B7 /* LabradorAudioPlayer.m */; };
+		1C73F5B83F90811B54062FCD90F130D5 /* LabradorProxyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6F86C968440C7A61013A0FD33BF27D /* LabradorProxyObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D13590C0936E03DB0CEFFAA51E89FCD /* LabradorDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB09959D645913B81994234E7A1394C /* LabradorDecoder.m */; };
+		1DDDD67FF9660FA0DE36A70062EB4A39 /* LabradorDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B6D3805C411C7CAD77CA852213C8D5 /* LabradorDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2227560319AEC87A9FB4067CEDA89E05 /* LabradorAudioPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C4539865E5D7FBBBFDEC10E8238BA0 /* LabradorAudioPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26099F0EDE1CF9950B7B4698D8F9C90D /* LabradorNetworkProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D868E121653596E9B9D5D21A73B9D7D3 /* LabradorNetworkProvider.m */; };
+		2B3E8248FB4A5088B5426960C64AE6DC /* LabradorQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B970991AD5313CFA063CE8B87BE4488B /* LabradorQueue.m */; };
+		2B6C033ED0D5676768185EDD9DAD7CFF /* LabradorQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEFFC47AB98BFC6C25C3794C12AB08A /* LabradorQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C966230FFAA86728672EF79E5C7AA44 /* LabradorNetworkProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = ED6C0C95EB2F9745DD78BD09458CFF50 /* LabradorNetworkProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D42B20D331852A1181B4F232D0C6F81 /* LabradorAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E28C4FE9E7ECD1C87E2C22C87026928 /* LabradorAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		346FB8DA70AACD0574AFC11DC1D2F0D6 /* Labrador-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 839554DB6CC74D7633948DA2A6F6E236 /* Labrador-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36AFA6948AF82E39F2A048DCFF7EE37F /* LabradorAudioPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7E6816C221D243FBDFF1637BF7265F /* LabradorAudioPacket.m */; };
+		37770AF603EE9EC017467D030C8E0810 /* LabradorInnerPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEC29FA3A6E401C20395797FFD08A0E /* LabradorInnerPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FEE529C5A26B3FE6BC954D42BA8E182 /* Labrador.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C43EE4E0135BC12E7DFF788819D65E /* Labrador.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4728ED2C5B8ED8013BDA2FF904F8E368 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B63B445F7336F4BFA71979EBF821A56 /* NSString+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47759C26F4CD8ED89EDD0DC550235895 /* LabradorLocalProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9637AFCD0427F418913A32F2AD0FD4A /* LabradorLocalProvider.m */; };
+		4C6E78BB19BEDA4380F83B8E57CC5B04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4C74C4AC982C6F449A89CC07A0FF8A6D /* LabradorDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BFE40CF0374B85228611D6CC30C73C /* LabradorDownloader.m */; };
+		53A6053E8933377AE504C5C223C32A44 /* Pods-Labrador_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A42C4A04A7BF37BA6A006570E1C202 /* Pods-Labrador_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF53725A75AF4E3CD3664B20594C525 /* LabradorInnerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7747C6DBD253C7368831C1B6CEBA1B12 /* LabradorInnerPlayer.m */; };
+		63C19BF318B69B61E41579786291B125 /* LabradorHTTPAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7C2B6CA8CAA7B676B0CAA2DD16FC33 /* LabradorHTTPAudioPlayer.m */; };
+		7AE197A5F217F0D6802CAACE3F9DE579 /* LabradorLocalAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E51224B271DFA11FC076A8E735C5DF /* LabradorLocalAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F32019E6C1EE5DE2603EE22B51F50BB /* Pods-Labrador_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BABD74E0F913F1B64F2D3137034B844 /* Pods-Labrador_Tests-dummy.m */; };
+		7FE6DF0C76DDB60985391189D64DBD1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		811303C2720C7D1E09A1F45241E87548 /* LabradorLocalAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 560AC41AEBCD469BFA6C824E39867B33 /* LabradorLocalAudioPlayer.m */; };
+		85C767803CE4B71453490C83B24454FB /* configure.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CD2BEEA694A4CF631D1472603EADBF /* configure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		887E3CA34F8EF5FA49DCFEA6D811C069 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 68773A6F4B89761C4387288ABAA9FEE8 /* NSString+Extensions.m */; };
+		A0BC9256B9BA7BA67BD03E2038145D74 /* LabradorProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D67E8829D907245911E4CAF0C40A15 /* LabradorProxyObject.m */; };
+		ACE62EC0C584790EC27B87DC28249389 /* LabradorNetworkProviderConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C1222DCA445F79193C5648C84032EDAD /* LabradorNetworkProviderConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5EDD7282E8727AC05EB749C39237CF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		B630732244AF9E41047979DB393B4FA7 /* LabradorDecodableDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4BCDE64DE12A9B35830C4D1FE5A18E /* LabradorDecodableDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE45C5F6A46ABEBFBBD1619C6453262D /* LabradorDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE6E60713D2F7704EF365340211E0F8 /* LabradorDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4CA8B40EEB814F66940FC6F09156814 /* LabradorNetworkProviderConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A000FF51949AA8B51499EFC362AD481 /* LabradorNetworkProviderConfiguration.m */; };
+		CA86CA043A4C0B42AE7443E2D39110E1 /* LabradorCacheMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF50E6B44B5A68F22C715359C8E3B05 /* LabradorCacheMapping.m */; };
+		CE5878DA00448B7797A16D20B6B8184B /* LabradorCacheMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = A01E257F487E75AFB4FC3D7B4C5B09A4 /* LabradorCacheMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6278E17965505DD310FE6ACDF0AC28D /* LabradorDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C05332066ED1CD8076246278710F5D5 /* LabradorDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E833E1A6011A0FB5DB7AD1779FA5BD00 /* Pods-Labrador_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD7559EEA9BF5DB71F6E31932129F91 /* Pods-Labrador_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF1E761331ECD61E351F662AE2F8FE1 /* Labrador-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B2580E2B3141E6527C0A74D868C65 /* Labrador-dummy.m */; };
+		EEF810796EC64E8C5F8DCE45E4151A32 /* LabradorHTTPAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B367D5AB6A6547F586D8B2D45B0DAE80 /* LabradorHTTPAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F976648F2C30C0D5E5597DC17FB40C4D /* Pods-Labrador_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2668C9BE2D469EAB7711E80F928C5C6 /* Pods-Labrador_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F91F4D69C04FC9E727917A13B199BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7D7E7A3BAC1172D80A2CBCEBFAB76C1;
+			remoteInfo = Labrador;
+		};
+		7A9800E37E13FD4A5E0569D633D81A44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E26C1D27410DB708DC5EFB7575A26C4;
+			remoteInfo = "Pods-Labrador_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A42C4A04A7BF37BA6A006570E1C202 /* Pods-Labrador_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Labrador_Example-umbrella.h"; sourceTree = "<group>"; };
+		05B6D3805C411C7CAD77CA852213C8D5 /* LabradorDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDownloader.h; sourceTree = "<group>"; };
+		10CD2BEEA694A4CF631D1472603EADBF /* configure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = configure.h; path = Labrador/Classes/configure.h; sourceTree = "<group>"; };
+		1DE6E60713D2F7704EF365340211E0F8 /* LabradorDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDecoder.h; sourceTree = "<group>"; };
+		1ED244C7EE2C468C7AEE55CC77F06345 /* Pods-Labrador_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Labrador_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26C43EE4E0135BC12E7DFF788819D65E /* Labrador.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Labrador.h; path = Labrador/Classes/Labrador.h; sourceTree = "<group>"; };
+		2D74A97A05E29D33B72991F138D0B6D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB49F77D80882551BE0B8E3255B476D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B63B445F7336F4BFA71979EBF821A56 /* NSString+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		3C2FA884F21DCAB53AC227C9F234D48B /* Labrador-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Labrador-prefix.pch"; sourceTree = "<group>"; };
+		3E28C4FE9E7ECD1C87E2C22C87026928 /* LabradorAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LabradorAudioPlayer.h; path = Labrador/Classes/LabradorAudioPlayer.h; sourceTree = "<group>"; };
+		487A03BDC52FB74BE86D2C697F1338BB /* Labrador.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Labrador.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FEFFC47AB98BFC6C25C3794C12AB08A /* LabradorQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorQueue.h; sourceTree = "<group>"; };
+		558C9CD70F95D4255F30D5F85487633C /* Pods-Labrador_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labrador_Tests-resources.sh"; sourceTree = "<group>"; };
+		560AC41AEBCD469BFA6C824E39867B33 /* LabradorLocalAudioPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LabradorLocalAudioPlayer.m; path = Labrador/Classes/LabradorLocalAudioPlayer.m; sourceTree = "<group>"; };
+		59C15D7D5585A8A66CADE9A71CFE0549 /* Pods-Labrador_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Labrador_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A4B2580E2B3141E6527C0A74D868C65 /* Labrador-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Labrador-dummy.m"; sourceTree = "<group>"; };
+		5BABD74E0F913F1B64F2D3137034B844 /* Pods-Labrador_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Labrador_Tests-dummy.m"; sourceTree = "<group>"; };
+		60B837A2F39ED948329DFA9B5A181021 /* LabradorDecodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDecodable.h; sourceTree = "<group>"; };
+		63FFDAE16053682BB3D0443580339376 /* Pods-Labrador_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labrador_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		68773A6F4B89761C4387288ABAA9FEE8 /* NSString+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		6AF50E6B44B5A68F22C715359C8E3B05 /* LabradorCacheMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorCacheMapping.m; sourceTree = "<group>"; };
+		6CD7559EEA9BF5DB71F6E31932129F91 /* Pods-Labrador_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Labrador_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6D32A83F3649FA549EC4381D20B533B4 /* Pods_Labrador_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Labrador_Example.framework; path = "Pods-Labrador_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4BCDE64DE12A9B35830C4D1FE5A18E /* LabradorDecodableDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDecodableDelegate.h; sourceTree = "<group>"; };
+		73E51224B271DFA11FC076A8E735C5DF /* LabradorLocalAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LabradorLocalAudioPlayer.h; path = Labrador/Classes/LabradorLocalAudioPlayer.h; sourceTree = "<group>"; };
+		7747C6DBD253C7368831C1B6CEBA1B12 /* LabradorInnerPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorInnerPlayer.m; sourceTree = "<group>"; };
+		78283F57602AD2F455BC90A051E020E6 /* LabradorLocalProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorLocalProvider.h; sourceTree = "<group>"; };
+		7873688A3AC9A2084455DC6E5915775A /* Pods-Labrador_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labrador_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A000FF51949AA8B51499EFC362AD481 /* LabradorNetworkProviderConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorNetworkProviderConfiguration.m; sourceTree = "<group>"; };
+		7A1681914C22A66C9C182CDE39992B40 /* Pods-Labrador_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labrador_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7B822EA4EEA285D8A9FF4F5754182F12 /* Pods-Labrador_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labrador_Example-resources.sh"; sourceTree = "<group>"; };
+		7D29801CA1DF495E27BD15886EA6A920 /* Pods-Labrador_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Labrador_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FA8F122AE0690A7E847BD348440D8B7 /* LabradorAudioPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LabradorAudioPlayer.m; path = Labrador/Classes/LabradorAudioPlayer.m; sourceTree = "<group>"; };
+		839554DB6CC74D7633948DA2A6F6E236 /* Labrador-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Labrador-umbrella.h"; sourceTree = "<group>"; };
+		8580082E9DC1C685F5E7FD3F0357CA23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C4539865E5D7FBBBFDEC10E8238BA0 /* LabradorAudioPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorAudioPacket.h; sourceTree = "<group>"; };
+		8ECA59A831A48BACD71602BB09773724 /* Pods-Labrador_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labrador_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8FC03D909062F22DBCD634402C5C62B0 /* Pods-Labrador_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Labrador_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C05332066ED1CD8076246278710F5D5 /* LabradorDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDataProvider.h; sourceTree = "<group>"; };
+		A01E257F487E75AFB4FC3D7B4C5B09A4 /* LabradorCacheMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorCacheMapping.h; sourceTree = "<group>"; };
+		AC7C2B6CA8CAA7B676B0CAA2DD16FC33 /* LabradorHTTPAudioPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LabradorHTTPAudioPlayer.m; path = Labrador/Classes/LabradorHTTPAudioPlayer.m; sourceTree = "<group>"; };
+		AD839F4048D3137F280D3F25B2885539 /* Pods-Labrador_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Labrador_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B0AC5B5D2F54236D27B4E1C0D68663AC /* Labrador.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Labrador.framework; path = Labrador.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2668C9BE2D469EAB7711E80F928C5C6 /* Pods-Labrador_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Labrador_Example-dummy.m"; sourceTree = "<group>"; };
+		B367D5AB6A6547F586D8B2D45B0DAE80 /* LabradorHTTPAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LabradorHTTPAudioPlayer.h; path = Labrador/Classes/LabradorHTTPAudioPlayer.h; sourceTree = "<group>"; };
+		B7A01D5EAA03FA412791DFFCCB50514B /* Pods-Labrador_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Labrador_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B970991AD5313CFA063CE8B87BE4488B /* LabradorQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorQueue.m; sourceTree = "<group>"; };
+		BC7E6816C221D243FBDFF1637BF7265F /* LabradorAudioPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorAudioPacket.m; sourceTree = "<group>"; };
+		BCB09959D645913B81994234E7A1394C /* LabradorDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorDecoder.m; sourceTree = "<group>"; };
+		BF85DF563A18E9D9242ACE5DFFBE1190 /* Labrador.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Labrador.xcconfig; sourceTree = "<group>"; };
+		C1222DCA445F79193C5648C84032EDAD /* LabradorNetworkProviderConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorNetworkProviderConfiguration.h; sourceTree = "<group>"; };
+		C9637AFCD0427F418913A32F2AD0FD4A /* LabradorLocalProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorLocalProvider.m; sourceTree = "<group>"; };
+		CC597BDB3687B6E3E29B17026996DAFC /* Pods_Labrador_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Labrador_Tests.framework; path = "Pods-Labrador_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D868E121653596E9B9D5D21A73B9D7D3 /* LabradorNetworkProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorNetworkProvider.m; sourceTree = "<group>"; };
+		DABEF55D5A2D367931C36003A1C2566A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DB6F86C968440C7A61013A0FD33BF27D /* LabradorProxyObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorProxyObject.h; sourceTree = "<group>"; };
+		E02E0D2A717054AD993E22E2B3813E49 /* Pods-Labrador_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Labrador_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E5EC72C1DE23AD1090F3CD1A280D61F8 /* LabradorDataProviderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorDataProviderDelegate.h; sourceTree = "<group>"; };
+		E8D67E8829D907245911E4CAF0C40A15 /* LabradorProxyObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorProxyObject.m; sourceTree = "<group>"; };
+		E91DD89D1258C90FCF66476CD66B158F /* Labrador.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Labrador.modulemap; sourceTree = "<group>"; };
+		EAD41201E5DF22D8F63B35BC77762556 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ECEC29FA3A6E401C20395797FFD08A0E /* LabradorInnerPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorInnerPlayer.h; sourceTree = "<group>"; };
+		ED6C0C95EB2F9745DD78BD09458CFF50 /* LabradorNetworkProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabradorNetworkProvider.h; sourceTree = "<group>"; };
+		F0BFE40CF0374B85228611D6CC30C73C /* LabradorDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabradorDownloader.m; sourceTree = "<group>"; };
+		FCE2BBFFE10E03E0E4C8C2A21A1D71D4 /* Pods-Labrador_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Labrador_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		175A060473053C017355BF79CBFB08BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE6DF0C76DDB60985391189D64DBD1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA0A3914FC4A2F31C8CA4675CD8E59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6E78BB19BEDA4380F83B8E57CC5B04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218E5D19937D46D8593DFF9DBF01577E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EDD7282E8727AC05EB749C39237CF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033A16D550F98023C725F2835C43E577 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A01E257F487E75AFB4FC3D7B4C5B09A4 /* LabradorCacheMapping.h */,
+				6AF50E6B44B5A68F22C715359C8E3B05 /* LabradorCacheMapping.m */,
+				05B6D3805C411C7CAD77CA852213C8D5 /* LabradorDownloader.h */,
+				F0BFE40CF0374B85228611D6CC30C73C /* LabradorDownloader.m */,
+				ED6C0C95EB2F9745DD78BD09458CFF50 /* LabradorNetworkProvider.h */,
+				D868E121653596E9B9D5D21A73B9D7D3 /* LabradorNetworkProvider.m */,
+				C1222DCA445F79193C5648C84032EDAD /* LabradorNetworkProviderConfiguration.h */,
+				7A000FF51949AA8B51499EFC362AD481 /* LabradorNetworkProviderConfiguration.m */,
+			);
+			name = network;
+			path = network;
+			sourceTree = "<group>";
+		};
+		0DCBB8D3DD36C2F1C867F364D7780C2E /* Pods-Labrador_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2D74A97A05E29D33B72991F138D0B6D8 /* Info.plist */,
+				FCE2BBFFE10E03E0E4C8C2A21A1D71D4 /* Pods-Labrador_Tests.modulemap */,
+				1ED244C7EE2C468C7AEE55CC77F06345 /* Pods-Labrador_Tests-acknowledgements.markdown */,
+				7D29801CA1DF495E27BD15886EA6A920 /* Pods-Labrador_Tests-acknowledgements.plist */,
+				5BABD74E0F913F1B64F2D3137034B844 /* Pods-Labrador_Tests-dummy.m */,
+				AD839F4048D3137F280D3F25B2885539 /* Pods-Labrador_Tests-frameworks.sh */,
+				558C9CD70F95D4255F30D5F85487633C /* Pods-Labrador_Tests-resources.sh */,
+				6CD7559EEA9BF5DB71F6E31932129F91 /* Pods-Labrador_Tests-umbrella.h */,
+				7873688A3AC9A2084455DC6E5915775A /* Pods-Labrador_Tests.debug.xcconfig */,
+				63FFDAE16053682BB3D0443580339376 /* Pods-Labrador_Tests.release.xcconfig */,
+			);
+			name = "Pods-Labrador_Tests";
+			path = "Target Support Files/Pods-Labrador_Tests";
+			sourceTree = "<group>";
+		};
+		2FBA38B738B1D4BA925A3258015D78B1 /* Pods-Labrador_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8580082E9DC1C685F5E7FD3F0357CA23 /* Info.plist */,
+				8FC03D909062F22DBCD634402C5C62B0 /* Pods-Labrador_Example.modulemap */,
+				59C15D7D5585A8A66CADE9A71CFE0549 /* Pods-Labrador_Example-acknowledgements.markdown */,
+				B7A01D5EAA03FA412791DFFCCB50514B /* Pods-Labrador_Example-acknowledgements.plist */,
+				B2668C9BE2D469EAB7711E80F928C5C6 /* Pods-Labrador_Example-dummy.m */,
+				8ECA59A831A48BACD71602BB09773724 /* Pods-Labrador_Example-frameworks.sh */,
+				7B822EA4EEA285D8A9FF4F5754182F12 /* Pods-Labrador_Example-resources.sh */,
+				02A42C4A04A7BF37BA6A006570E1C202 /* Pods-Labrador_Example-umbrella.h */,
+				E02E0D2A717054AD993E22E2B3813E49 /* Pods-Labrador_Example.debug.xcconfig */,
+				7A1681914C22A66C9C182CDE39992B40 /* Pods-Labrador_Example.release.xcconfig */,
+			);
+			name = "Pods-Labrador_Example";
+			path = "Target Support Files/Pods-Labrador_Example";
+			sourceTree = "<group>";
+		};
+		369618A41F988DFEA0CD0A46FCC0C419 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9C05332066ED1CD8076246278710F5D5 /* LabradorDataProvider.h */,
+				E5EC72C1DE23AD1090F3CD1A280D61F8 /* LabradorDataProviderDelegate.h */,
+				60B837A2F39ED948329DFA9B5A181021 /* LabradorDecodable.h */,
+				6D4BCDE64DE12A9B35830C4D1FE5A18E /* LabradorDecodableDelegate.h */,
+			);
+			name = protocol;
+			path = Labrador/Classes/protocol;
+			sourceTree = "<group>";
+		};
+		5B801E40AAD91411AD383D81C1C3BB31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0AC5B5D2F54236D27B4E1C0D68663AC /* Labrador.framework */,
+				6D32A83F3649FA549EC4381D20B533B4 /* Pods_Labrador_Example.framework */,
+				CC597BDB3687B6E3E29B17026996DAFC /* Pods_Labrador_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DE5146C44786319CB51214A2575E5C64 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5B801E40AAD91411AD383D81C1C3BB31 /* Products */,
+				86F461E8DE5D7CE75491497F77E33656 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86F461E8DE5D7CE75491497F77E33656 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA38B738B1D4BA925A3258015D78B1 /* Pods-Labrador_Example */,
+				0DCBB8D3DD36C2F1C867F364D7780C2E /* Pods-Labrador_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9F63D64611CA8FA5DD7BA79CDDE90C62 /* utilitys */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F86C968440C7A61013A0FD33BF27D /* LabradorProxyObject.h */,
+				E8D67E8829D907245911E4CAF0C40A15 /* LabradorProxyObject.m */,
+				4FEFFC47AB98BFC6C25C3794C12AB08A /* LabradorQueue.h */,
+				B970991AD5313CFA063CE8B87BE4488B /* LabradorQueue.m */,
+				3B63B445F7336F4BFA71979EBF821A56 /* NSString+Extensions.h */,
+				68773A6F4B89761C4387288ABAA9FEE8 /* NSString+Extensions.m */,
+			);
+			name = utilitys;
+			path = Labrador/Classes/utilitys;
+			sourceTree = "<group>";
+		};
+		B381AB5F7DC2033209A04FE7400D3BE1 /* Labrador */ = {
+			isa = PBXGroup;
+			children = (
+				10CD2BEEA694A4CF631D1472603EADBF /* configure.h */,
+				26C43EE4E0135BC12E7DFF788819D65E /* Labrador.h */,
+				3E28C4FE9E7ECD1C87E2C22C87026928 /* LabradorAudioPlayer.h */,
+				7FA8F122AE0690A7E847BD348440D8B7 /* LabradorAudioPlayer.m */,
+				B367D5AB6A6547F586D8B2D45B0DAE80 /* LabradorHTTPAudioPlayer.h */,
+				AC7C2B6CA8CAA7B676B0CAA2DD16FC33 /* LabradorHTTPAudioPlayer.m */,
+				73E51224B271DFA11FC076A8E735C5DF /* LabradorLocalAudioPlayer.h */,
+				560AC41AEBCD469BFA6C824E39867B33 /* LabradorLocalAudioPlayer.m */,
+				F3F18373E17DEE515D2E108E93BB6893 /* decode */,
+				EF982FC2D21E52369051D3EAF29C58C8 /* inner_player */,
+				F7BCD32CCC8CCC15EAAF261FFBD04618 /* Pod */,
+				369618A41F988DFEA0CD0A46FCC0C419 /* protocol */,
+				D78D8A26E97309738FE473039B08FC13 /* Support Files */,
+				9F63D64611CA8FA5DD7BA79CDDE90C62 /* utilitys */,
+			);
+			name = Labrador;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D78D8A26E97309738FE473039B08FC13 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AB49F77D80882551BE0B8E3255B476D /* Info.plist */,
+				E91DD89D1258C90FCF66476CD66B158F /* Labrador.modulemap */,
+				BF85DF563A18E9D9242ACE5DFFBE1190 /* Labrador.xcconfig */,
+				5A4B2580E2B3141E6527C0A74D868C65 /* Labrador-dummy.m */,
+				3C2FA884F21DCAB53AC227C9F234D48B /* Labrador-prefix.pch */,
+				839554DB6CC74D7633948DA2A6F6E236 /* Labrador-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Labrador";
+			sourceTree = "<group>";
+		};
+		DE5146C44786319CB51214A2575E5C64 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B381AB5F7DC2033209A04FE7400D3BE1 /* Labrador */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EF982FC2D21E52369051D3EAF29C58C8 /* inner_player */ = {
+			isa = PBXGroup;
+			children = (
+				87C4539865E5D7FBBBFDEC10E8238BA0 /* LabradorAudioPacket.h */,
+				BC7E6816C221D243FBDFF1637BF7265F /* LabradorAudioPacket.m */,
+				ECEC29FA3A6E401C20395797FFD08A0E /* LabradorInnerPlayer.h */,
+				7747C6DBD253C7368831C1B6CEBA1B12 /* LabradorInnerPlayer.m */,
+			);
+			name = inner_player;
+			path = Labrador/Classes/inner_player;
+			sourceTree = "<group>";
+		};
+		F3F18373E17DEE515D2E108E93BB6893 /* decode */ = {
+			isa = PBXGroup;
+			children = (
+				1DE6E60713D2F7704EF365340211E0F8 /* LabradorDecoder.h */,
+				BCB09959D645913B81994234E7A1394C /* LabradorDecoder.m */,
+				FA2978D992CD1DA5D798872D5BEAA8B7 /* local */,
+				033A16D550F98023C725F2835C43E577 /* network */,
+			);
+			name = decode;
+			path = Labrador/Classes/decode;
+			sourceTree = "<group>";
+		};
+		F7BCD32CCC8CCC15EAAF261FFBD04618 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				487A03BDC52FB74BE86D2C697F1338BB /* Labrador.podspec */,
+				DABEF55D5A2D367931C36003A1C2566A /* LICENSE */,
+				EAD41201E5DF22D8F63B35BC77762556 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FA2978D992CD1DA5D798872D5BEAA8B7 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				78283F57602AD2F455BC90A051E020E6 /* LabradorLocalProvider.h */,
+				C9637AFCD0427F418913A32F2AD0FD4A /* LabradorLocalProvider.m */,
+			);
+			name = local;
+			path = local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9CCBF9650251A31C401F71EAE78995B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C767803CE4B71453490C83B24454FB /* configure.h in Headers */,
+				346FB8DA70AACD0574AFC11DC1D2F0D6 /* Labrador-umbrella.h in Headers */,
+				3FEE529C5A26B3FE6BC954D42BA8E182 /* Labrador.h in Headers */,
+				2227560319AEC87A9FB4067CEDA89E05 /* LabradorAudioPacket.h in Headers */,
+				2D42B20D331852A1181B4F232D0C6F81 /* LabradorAudioPlayer.h in Headers */,
+				CE5878DA00448B7797A16D20B6B8184B /* LabradorCacheMapping.h in Headers */,
+				E6278E17965505DD310FE6ACDF0AC28D /* LabradorDataProvider.h in Headers */,
+				0807E2B611310225A72DEAEE7A0238E1 /* LabradorDataProviderDelegate.h in Headers */,
+				00B61169D213FE626438AE457C782CFA /* LabradorDecodable.h in Headers */,
+				B630732244AF9E41047979DB393B4FA7 /* LabradorDecodableDelegate.h in Headers */,
+				BE45C5F6A46ABEBFBBD1619C6453262D /* LabradorDecoder.h in Headers */,
+				1DDDD67FF9660FA0DE36A70062EB4A39 /* LabradorDownloader.h in Headers */,
+				EEF810796EC64E8C5F8DCE45E4151A32 /* LabradorHTTPAudioPlayer.h in Headers */,
+				37770AF603EE9EC017467D030C8E0810 /* LabradorInnerPlayer.h in Headers */,
+				7AE197A5F217F0D6802CAACE3F9DE579 /* LabradorLocalAudioPlayer.h in Headers */,
+				000E529A58FCAF00497660DE6C4FAFFC /* LabradorLocalProvider.h in Headers */,
+				2C966230FFAA86728672EF79E5C7AA44 /* LabradorNetworkProvider.h in Headers */,
+				ACE62EC0C584790EC27B87DC28249389 /* LabradorNetworkProviderConfiguration.h in Headers */,
+				1C73F5B83F90811B54062FCD90F130D5 /* LabradorProxyObject.h in Headers */,
+				2B6C033ED0D5676768185EDD9DAD7CFF /* LabradorQueue.h in Headers */,
+				4728ED2C5B8ED8013BDA2FF904F8E368 /* NSString+Extensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8806DDD4D4E41CBF0BD12C809885D6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A6053E8933377AE504C5C223C32A44 /* Pods-Labrador_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE86AD30A27C38FCA4578B6FE9702E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E833E1A6011A0FB5DB7AD1779FA5BD00 /* Pods-Labrador_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E26C1D27410DB708DC5EFB7575A26C4 /* Pods-Labrador_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF2E2A5ED8F6A5A24B573EB4281AEB6 /* Build configuration list for PBXNativeTarget "Pods-Labrador_Example" */;
+			buildPhases = (
+				D498E27499696532B75DF20D5CAB0DB3 /* Sources */,
+				175A060473053C017355BF79CBFB08BC /* Frameworks */,
+				B8806DDD4D4E41CBF0BD12C809885D6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0872B879161128D5599D25AE9C56A216 /* PBXTargetDependency */,
+			);
+			name = "Pods-Labrador_Example";
+			productName = "Pods-Labrador_Example";
+			productReference = 6D32A83F3649FA549EC4381D20B533B4 /* Pods_Labrador_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26AE5ECFEB5001359824D64978E9A36A /* Pods-Labrador_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A812229F6E5CD245C2E2FE6FDD44224 /* Build configuration list for PBXNativeTarget "Pods-Labrador_Tests" */;
+			buildPhases = (
+				32A869424DD5667B78F7EE99B8B2B8F2 /* Sources */,
+				218E5D19937D46D8593DFF9DBF01577E /* Frameworks */,
+				EBE86AD30A27C38FCA4578B6FE9702E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A525991596A24B23E5AFFFAE16CC603C /* PBXTargetDependency */,
+			);
+			name = "Pods-Labrador_Tests";
+			productName = "Pods-Labrador_Tests";
+			productReference = CC597BDB3687B6E3E29B17026996DAFC /* Pods_Labrador_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7D7E7A3BAC1172D80A2CBCEBFAB76C1 /* Labrador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FEC5A5A574AFC4FF8E2E555E0CB4BD /* Build configuration list for PBXNativeTarget "Labrador" */;
+			buildPhases = (
+				84501D69C31029C9878B223DA7FA0210 /* Sources */,
+				1FA0A3914FC4A2F31C8CA4675CD8E59F /* Frameworks */,
+				9CCBF9650251A31C401F71EAE78995B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Labrador;
+			productName = Labrador;
+			productReference = B0AC5B5D2F54236D27B4E1C0D68663AC /* Labrador.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5B801E40AAD91411AD383D81C1C3BB31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7D7E7A3BAC1172D80A2CBCEBFAB76C1 /* Labrador */,
+				0E26C1D27410DB708DC5EFB7575A26C4 /* Pods-Labrador_Example */,
+				26AE5ECFEB5001359824D64978E9A36A /* Pods-Labrador_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A869424DD5667B78F7EE99B8B2B8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F32019E6C1EE5DE2603EE22B51F50BB /* Pods-Labrador_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84501D69C31029C9878B223DA7FA0210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF1E761331ECD61E351F662AE2F8FE1 /* Labrador-dummy.m in Sources */,
+				36AFA6948AF82E39F2A048DCFF7EE37F /* LabradorAudioPacket.m in Sources */,
+				0A2C8C99A288D8B6E8219843C9DD156D /* LabradorAudioPlayer.m in Sources */,
+				CA86CA043A4C0B42AE7443E2D39110E1 /* LabradorCacheMapping.m in Sources */,
+				1D13590C0936E03DB0CEFFAA51E89FCD /* LabradorDecoder.m in Sources */,
+				4C74C4AC982C6F449A89CC07A0FF8A6D /* LabradorDownloader.m in Sources */,
+				63C19BF318B69B61E41579786291B125 /* LabradorHTTPAudioPlayer.m in Sources */,
+				5FF53725A75AF4E3CD3664B20594C525 /* LabradorInnerPlayer.m in Sources */,
+				811303C2720C7D1E09A1F45241E87548 /* LabradorLocalAudioPlayer.m in Sources */,
+				47759C26F4CD8ED89EDD0DC550235895 /* LabradorLocalProvider.m in Sources */,
+				26099F0EDE1CF9950B7B4698D8F9C90D /* LabradorNetworkProvider.m in Sources */,
+				C4CA8B40EEB814F66940FC6F09156814 /* LabradorNetworkProviderConfiguration.m in Sources */,
+				A0BC9256B9BA7BA67BD03E2038145D74 /* LabradorProxyObject.m in Sources */,
+				2B3E8248FB4A5088B5426960C64AE6DC /* LabradorQueue.m in Sources */,
+				887E3CA34F8EF5FA49DCFEA6D811C069 /* NSString+Extensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D498E27499696532B75DF20D5CAB0DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F976648F2C30C0D5E5597DC17FB40C4D /* Pods-Labrador_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0872B879161128D5599D25AE9C56A216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Labrador;
+			target = E7D7E7A3BAC1172D80A2CBCEBFAB76C1 /* Labrador */;
+			targetProxy = 0F91F4D69C04FC9E727917A13B199BC0 /* PBXContainerItemProxy */;
+		};
+		A525991596A24B23E5AFFFAE16CC603C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Labrador_Example";
+			target = 0E26C1D27410DB708DC5EFB7575A26C4 /* Pods-Labrador_Example */;
+			targetProxy = 7A9800E37E13FD4A5E0569D633D81A44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F394C2CEDED8F8947C81A18B935E738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF85DF563A18E9D9242ACE5DFFBE1190 /* Labrador.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Labrador/Labrador-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Labrador/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Labrador/Labrador.modulemap";
+				PRODUCT_MODULE_NAME = Labrador;
+				PRODUCT_NAME = Labrador;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DFF191358C496B1E15CD9761D381F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02E0D2A717054AD993E22E2B3813E49 /* Pods-Labrador_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Labrador_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labrador_Example/Pods-Labrador_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C1A5DDA56BCBEDC6A295D3A37B61AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7873688A3AC9A2084455DC6E5915775A /* Pods-Labrador_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Labrador_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labrador_Tests/Pods-Labrador_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		455D0E3E104D06740374C102B95670E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63FFDAE16053682BB3D0443580339376 /* Pods-Labrador_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Labrador_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labrador_Tests/Pods-Labrador_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A4451786522390017EBDF11ADE4C870F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF85DF563A18E9D9242ACE5DFFBE1190 /* Labrador.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Labrador/Labrador-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Labrador/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Labrador/Labrador.modulemap";
+				PRODUCT_MODULE_NAME = Labrador;
+				PRODUCT_NAME = Labrador;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADE660555B023A6659D8DE59ABDA697A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1681914C22A66C9C182CDE39992B40 /* Pods-Labrador_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Labrador_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Labrador_Example/Pods-Labrador_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A812229F6E5CD245C2E2FE6FDD44224 /* Build configuration list for PBXNativeTarget "Pods-Labrador_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1A5DDA56BCBEDC6A295D3A37B61AAF /* Debug */,
+				455D0E3E104D06740374C102B95670E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF2E2A5ED8F6A5A24B573EB4281AEB6 /* Build configuration list for PBXNativeTarget "Pods-Labrador_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DFF191358C496B1E15CD9761D381F79 /* Debug */,
+				ADE660555B023A6659D8DE59ABDA697A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6FEC5A5A574AFC4FF8E2E555E0CB4BD /* Build configuration list for PBXNativeTarget "Labrador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F394C2CEDED8F8947C81A18B935E738 /* Debug */,
+				A4451786522390017EBDF11ADE4C870F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

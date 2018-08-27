@@ -10,4 +10,10 @@
 
 @interface LabradorViewController : UIViewController
 
+- (IBAction)play:(id)sender ;
+- (IBAction)pause:(id)sender ;
+- (IBAction)resume:(id)sender ;
+- (IBAction)sliderValueChanged:(UISlider *)slider ;
+- (IBAction)stop:(id)sender;
+
 @end

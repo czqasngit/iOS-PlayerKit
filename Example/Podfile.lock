@@ -1,0 +1,16 @@
+PODS:
+  - Labrador (0.1.0)
+
+DEPENDENCIES:
+  - Labrador (from `../`)
+
+EXTERNAL SOURCES:
+  Labrador:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Labrador: 5c6432f86a5a54a9d390d610156b604937c40f6b
+
+PODFILE CHECKSUM: 3de8cdf3ea3758106ae83a34ca2fd167f0a94303
+
+COCOAPODS: 1.5.0

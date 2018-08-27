@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0FE9C858EF417D58002A842F /* Pods_Labrador_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Labrador_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BCA90C920683EB8FDB92E41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		473EB881258DBC6CEBB12D02 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		48A94732261800E0DDFE11B7 /* Labrador.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Labrador.podspec; path = ../Labrador.podspec; sourceTree = "<group>"; };
+		2BCA90C920683EB8FDB92E41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		473EB881258DBC6CEBB12D02 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		48A94732261800E0DDFE11B7 /* Labrador.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Labrador.podspec; path = ../Labrador.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4CD7BCBA76850B68F4AFC2D1 /* Pods-Labrador_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrador_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Labrador_Tests/Pods-Labrador_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Labrador_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrador_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };

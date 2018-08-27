@@ -1,0 +1,6 @@
+framework module Labrador {
+  umbrella header "Labrador-umbrella.h"
+
+  export *
+  module * { export * }
+}
