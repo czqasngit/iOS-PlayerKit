@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/czqasngit/Labrador.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
   s.source_files = 'Labrador/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Labrador/Classes/**/*.h'
   s.frameworks = 'AudioToolbox'
 end
