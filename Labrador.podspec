@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'Labrador is a complete stream/file audio player.'
   s.description      = 'A complete audio player with a modular design that can be replaced with different components to suit different needs. A decoder and two data providers have been implemented'
-
   s.homepage         = 'https://github.com/czqasngit/Labrador'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'czqasngit' => 'czqasn_6@163.com' }
@@ -20,5 +19,4 @@ Pod::Spec.new do |s|
   s.source_files = 'Labrador/Classes/**/*'
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'AudioToolbox'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
