@@ -14,18 +14,25 @@ A complete audio player with a modular design that can be replaced with differen
 
 ## Extensions
 1.The decoder can use FFmpeg to support more formats
+
 2.Data provider can be based on Samba with FTP or more
+
 1.解码器可以使用FFmpeg来支持更多格式
+
 2.Data提供程序可以基于Samba和FTP或更多
 
 
 ## Futues
 1.Local file play
+
 2.Network stream play and cache
+
 3.Segmentation cache
 
 1.本地文件播放
+
 2.网络文件播放
+
 3.分段缓存
 
 ## Usage(Objective-C)
